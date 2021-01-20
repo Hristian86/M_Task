@@ -1,0 +1,8 @@
+C:\Users\Pencho\source\repos\OutPuts\bin\Debug\netcoreapp3.1\OutPuts.deps.json
+C:\Users\Pencho\source\repos\OutPuts\bin\Debug\netcoreapp3.1\OutPuts.dll
+C:\Users\Pencho\source\repos\OutPuts\obj\Debug\netcoreapp3.1\OutPuts.AssemblyInfoInputs.cache
+C:\Users\Pencho\source\repos\OutPuts\obj\Debug\netcoreapp3.1\OutPuts.AssemblyInfo.cs
+C:\Users\Pencho\source\repos\OutPuts\bin\Debug\netcoreapp3.1\OutPuts.pdb
+C:\Users\Pencho\source\repos\OutPuts\obj\Debug\netcoreapp3.1\OutPuts.csprojAssemblyReference.cache
+C:\Users\Pencho\source\repos\OutPuts\obj\Debug\netcoreapp3.1\OutPuts.dll
+C:\Users\Pencho\source\repos\OutPuts\obj\Debug\netcoreapp3.1\OutPuts.pdb

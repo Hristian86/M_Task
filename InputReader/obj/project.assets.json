@@ -4,40 +4,6 @@
     ".NETCoreApp,Version=v3.1": {
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
-      },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "InputReader": "1.0.0",
-          "OutPuts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      },
-      "InputReader/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/InputReader.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InputReader.dll": {}
-        }
-      },
-      "OutPuts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/OutPuts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OutPuts.dll": {}
-        }
       }
     }
   },
@@ -66,28 +32,10 @@
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
-    },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
-    },
-    "InputReader/1.0.0": {
-      "type": "project",
-      "path": "../InputReader/InputReader.csproj",
-      "msbuildProject": "../InputReader/InputReader.csproj"
-    },
-    "OutPuts/1.0.0": {
-      "type": "project",
-      "path": "../OutPuts/OutPuts.csproj",
-      "msbuildProject": "../OutPuts/OutPuts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Core >= 1.0.0",
-      "InputReader >= 1.0.0",
-      "OutPuts >= 1.0.0",
       "StyleCop.Analyzers >= 1.1.118"
     ]
   },
@@ -99,11 +47,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\FilesForGithub\\M_Task\\Assigment 2\\Assigment 2.csproj",
-      "projectName": "Assigment 2",
-      "projectPath": "G:\\FilesForGithub\\M_Task\\Assigment 2\\Assigment 2.csproj",
+      "projectUniqueName": "G:\\FilesForGithub\\M_Task\\InputReader\\InputReader.csproj",
+      "projectName": "InputReader",
+      "projectPath": "G:\\FilesForGithub\\M_Task\\InputReader\\InputReader.csproj",
       "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-      "outputPath": "G:\\FilesForGithub\\M_Task\\Assigment 2\\obj\\",
+      "outputPath": "G:\\FilesForGithub\\M_Task\\InputReader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -123,17 +71,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "G:\\FilesForGithub\\M_Task\\Core\\Core.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\Core\\Core.csproj"
-            },
-            "G:\\FilesForGithub\\M_Task\\InputReader\\InputReader.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\InputReader\\InputReader.csproj"
-            },
-            "G:\\FilesForGithub\\M_Task\\OutPuts\\OutPuts.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\OutPuts\\OutPuts.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
