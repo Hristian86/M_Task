@@ -16,7 +16,6 @@
         protected string verticalView { get; private set; } = "Vertical";
 
         protected Dictionary<int, Brick> occurrence;
-        protected Dictionary<int, Brick> resultView;
         protected List<int> unique;
         protected bool[] visited;
         protected Dictionary<int, List<int[]>> multiDimentionalPairHolder;

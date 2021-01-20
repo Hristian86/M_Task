@@ -13,7 +13,6 @@
 
         internal int Col { get; set; }
 
-
         internal int Row2 { get; set; }
 
         internal int Col2 { get; set; }
@@ -25,11 +24,5 @@
         internal string BrickLayout { get; set; }
 
         internal int Number { get; set; }
-
-        internal Brick()
-        {
-
-        }
-
     }
 }

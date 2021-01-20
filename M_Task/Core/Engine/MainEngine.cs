@@ -21,7 +21,6 @@
             this.FillBrickMatrix = new Brick[rows, cols];
             this.matrix = new int[rows, cols];
             this.occurrence = new Dictionary<int, Brick>();
-            this.resultView = new Dictionary<int, Brick>();
             this.unique = new List<int>();
             this.writer = new Writer();
         }
