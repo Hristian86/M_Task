@@ -41,9 +41,9 @@
         private void FillUnique()
         {
             this.multiDimentionalPairHolder = new Dictionary<int, List<int[]>>();
-            var layers = this.matrix.GetLength(0) / 2;
-            var pairs = this.matrix.GetLength(1) / 4;
-            var x = layers * pairs;
+            int layers = this.matrix.GetLength(0) / 2;
+            int pairs = this.matrix.GetLength(1) / 4;
+            int x = layers * pairs;
 
             for (int f = 0; f < x; f++)
             {
@@ -53,27 +53,17 @@
                 }
             }
 
-            var rows = 0;
-            var index = 0;
-            var count = 0;
-            var pairsCount = 0;
+            int rows = 0;
+            int index = 0;
+            int count = 0;
+            int pairsCount = 0;
             for (int i = 0; i < layers; i++)
             {
                 for (int k = 0; k < pairs; k++)
                 {
-                    var uniquePair = new int[4];
+                    int[] uniquePair = new int[4];
 
-                    for (int row = rows; row < 2; row++)
-                    {
-                        for (int col = 0; col < 4; col++)
-                        {
-                            if (!uniquePair.Contains(this.matrix[row, col + count]))
-                            {
-                                uniquePair[index] = this.matrix[row, col + count];
-                                index += 1;
-                            }
-                        }
-                    }
+                    this.CellAssign(rows, uniquePair, index, count);
 
                     this.multiDimentionalPairHolder[pairsCount].Add(uniquePair);
                     pairsCount += 1;
@@ -82,6 +72,27 @@
                 }
 
                 rows += 2;
+                count = 0;
+            }
+        }
+
+        private void CellAssign(int rows, int[] uniquePair, int index, int count)
+        {
+            for (int row = rows; row < 2 + rows; row++)
+            {
+                for (int col = 0; col < 4; col++)
+                {
+                    if (!uniquePair.Contains(this.matrix[row, col + count]))
+                    {
+                        if (index > 3)
+                        {
+                            throw new ArgumentException("Logic not implemented.");
+                        }
+
+                        uniquePair[index] = this.matrix[row, col + count];
+                        index += 1;
+                    }
+                }
             }
         }
 
@@ -115,6 +126,9 @@
             {
                 int[] bricks = this.ReadLine();
 
+                // Validations for each row.
+                this.ValidateRows(bricks);
+
                 for (int j = 0; j < this.matrix.GetLength(1); j++)
                 {
                     this.matrix[i, j] = bricks[j];
@@ -131,7 +145,7 @@
                 brick.Row = i;
                 brick.Col = j;
 
-                this.CheckBrick(i, j, brick.Number, brick);
+                this.ArrangeBrickPossition(i, j, brick.Number, brick);
 
                 // Validete each number.
                 this.FillBrickMatrix[i, j] = brick;

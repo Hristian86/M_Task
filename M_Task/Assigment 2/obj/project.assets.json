@@ -99,11 +99,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\FilesForGithub\\M_Task\\M_Task\\Assigment 2\\Assigment.csproj",
+      "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\M_Task\\Assigment 2\\Assigment.csproj",
       "projectName": "Assigment",
-      "projectPath": "G:\\FilesForGithub\\M_Task\\M_Task\\Assigment 2\\Assigment.csproj",
+      "projectPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\Assigment 2\\Assigment.csproj",
       "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-      "outputPath": "G:\\FilesForGithub\\M_Task\\M_Task\\Assigment 2\\obj\\",
+      "outputPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\Assigment 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -124,14 +124,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "G:\\FilesForGithub\\M_Task\\M_Task\\Core\\Assigment.Core.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\M_Task\\Core\\Assigment.Core.csproj"
+            "C:\\Users\\Pencho\\Desktop\\M_Task\\Core\\Assigment.Core.csproj": {
+              "projectPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\Core\\Assigment.Core.csproj"
             },
-            "G:\\FilesForGithub\\M_Task\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\M_Task\\InputReader\\Assigment.InputReader.csproj"
+            "C:\\Users\\Pencho\\Desktop\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
+              "projectPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\InputReader\\Assigment.InputReader.csproj"
             },
-            "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
-              "projectPath": "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj"
+            "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
+              "projectPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {}
+    "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {}
   },
   "projects": {
-    "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
+    "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "projectName": "Assigment.OutPuts",
-        "projectPath": "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "G:\\FilesForGithub\\M_Task\\M_Task\\OutPuts\\obj\\",
+        "outputPath": "C:\\Users\\Pencho\\Desktop\\M_Task\\OutPuts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

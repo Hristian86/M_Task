@@ -96,14 +96,32 @@
                 {
                     if (number > 100 || number < 0)
                     {
-                        throw new ArgumentOutOfRangeException("Invalid argumens");
+                        throw new ArgumentOutOfRangeException("Invalid argumens.");
                     }
                     else if (number % 2 == 1)
                     {
-                        throw new ArgumentException("Invalid number of bricks");
+                        throw new ArgumentException("Invalid number of bricks.");
                     }
+                }
+
+                if (line[1] % 4 != 0)
+                {
+                    throw new ArgumentException("Invalid number of bricks.");
                 }
             }
         }
+
+        /// <summary>
+        /// Validate each row if it's valid.
+        /// </summary>
+        /// <param name="bricks">array of int params.</param>
+        protected void ValidateRows(int[] bricks)
+        {
+            if (bricks.Length % 4 != 0)
+            {
+                throw new ArgumentException("Row is not valid.");
+            }
+        }
+
     }
 }

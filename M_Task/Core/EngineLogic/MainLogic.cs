@@ -3,10 +3,10 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using Core.BrickWork;
-    using InputReader;
-    using InputReader.Validate;
-    using OutPuts.OutPut;
+    using Assigment.Core.BrickWork;
+    using Assigment.InputReader;
+    using Assigment.InputReader.Validate;
+    using Assigment.OutPuts.OutPut;
 
     public class MainLogic : Validations
     {
@@ -15,10 +15,15 @@
 
         protected string verticalView { get; private set; } = "Vertical";
 
+        // All of double pair of repeated numbers which are forming the bricks.
         protected Dictionary<int, Brick> occurrence;
+
+        // Holds for each layer the unique numbers.
+        protected Dictionary<int, List<int[]>> multiDimentionalPairHolder;
+
         protected List<int> unique;
         protected bool[] visited;
-        protected Dictionary<int, List<int[]>> multiDimentionalPairHolder;
+        protected Brick[,] result;
 
         private Brick[,] brickMatrix;
         protected int[,] matrix;
@@ -41,11 +46,11 @@
         /// <param name="j">Col.</param>
         /// <param name="bricks">int brick numbers.</param>
         /// <param name="brick">Bricks class.</param>
-        protected void CheckBrick(int i, int j, int bricks, Brick brick)
+        protected void ArrangeBrickPossition(int i, int j, int bricks, Brick brick)
         {
             brick.Visited += 1;
 
-            // Check if it is found on differend row, if it is then its vertical if it not, it is horizontal.
+            // Check if it is found on differend row, if it is then its vertical, if it is not then is horizontal.
             if (i % 2 != 1)
             {
                 brick.Horizontal = true;
@@ -67,7 +72,6 @@
                     this.occurrence[bricks].Visited += 1;
                     this.occurrence[bricks].Row2 = i;
                     this.occurrence[bricks].Col2 = j;
-
                 }
                 else if (brick.Vertical)
                 {

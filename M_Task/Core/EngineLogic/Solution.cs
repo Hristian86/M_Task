@@ -8,24 +8,31 @@
 
     public class Solution : MainLogic
     {
-        protected Brick[,] result;
-
         protected void Solution1()
         {
             this.result = new Brick[this.FillBrickMatrix.GetLength(0), this.FillBrickMatrix.GetLength(1)];
 
-            foreach (var uniqueReact in this.multiDimentionalPairHolder)
+            int rowIncrement = 0;
+            int rowToSum = 0;
+            foreach (var uniqueChield in this.multiDimentionalPairHolder)
             {
-                this.unique.AddRange(uniqueReact.Value[0].ToList());
+                if (rowIncrement % 2 == 0 && rowIncrement != 0)
+                {
+                    rowToSum += 2;
+                }
 
-                List<int> copySort = this.unique.ToList();
-                copySort.Sort();
+                if (rowIncrement == 3)
+                {
+                    // Debugging purposes.
+                    ;
+                }
 
-                this.visited = new bool[copySort[copySort.Count - 1]];
+                this.unique.AddRange(uniqueChield.Value[0].ToList());
+                this.visited = new bool[this.unique.Count];
 
                 for (int i = 0; i < this.unique.Count - 1; i++)
                 {
-                    var x = i;
+                    int x = i;
 
                     if (this.visited[x])
                     {
@@ -41,37 +48,47 @@
                         && !this.visited[x]
                         && !this.visited[x + 1])
                     {
+                        // Current = vertical view.
                         if (this.occurrence[next].Horizontal && this.occurrence[next].Vertical)
                         {
+                            // Next = vertical view.
                             // Top bottom + top bottom...
+                            this.VerticalVertical(current, next, x, rowToSum);
                         }
                         else
                         {
+                            // Next = horizontal view.
                             // Top bottom + left right...
-                            this.VerticalHorizontal(current, next, x);
+                            this.VerticalHorizontal(current, next, x, rowToSum);
                         }
                     }
                     else
                     {
                         // left right.
                         // current = horizontal view.
-                        this.LeftRight(current, next, x);
+                        // TODO fix the method.
+                        this.HorizontalHorizontal(current, next, x, rowToSum);
                     }
-
                 }
 
                 this.unique.Clear();
+                rowIncrement += 1;
             }
         }
 
-        // Current is verticali, next is horizontal.
-        private void VerticalHorizontal(int current, int next, int x)
+        /// <summary>
+        /// Assign bricks.
+        /// </summary>
+        /// <param name="current">Currnet is vertical.</param>
+        /// <param name="next">Next is vertical.</param>
+        /// <param name="x">Index.</param>
+        private void VerticalVertical(int current, int next, int x, int rowToSum)
         {
             if (x < 2)
             {
-                var currentSwap = this.occurrence[current];
+                Brick currentSwap = this.occurrence[current];
                 currentSwap.BrickLayout = this.horizontalView;
-                var nextSwap = this.occurrence[next];
+                Brick nextSwap = this.occurrence[next];
                 nextSwap.BrickLayout = this.horizontalView;
 
                 // next goes current and swap.
@@ -86,9 +103,9 @@
             }
             else
             {
-                var currentSwap = this.occurrence[current];
+                Brick currentSwap = this.occurrence[current];
                 currentSwap.BrickLayout = this.horizontalView;
-                var nextSwap = this.occurrence[next];
+                Brick nextSwap = this.occurrence[next];
                 nextSwap.BrickLayout = this.horizontalView;
 
                 // next goes current and swap.
@@ -103,18 +120,62 @@
             }
         }
 
-        private void LeftRight(int current, int next, int x)
+        /// <summary>
+        /// Assign bricks.
+        /// </summary>
+        /// <param name="current">Current is vertical.</param>
+        /// <param name="next">Next is horizontal.</param>
+        /// <param name="x">Index.</param>
+        private void VerticalHorizontal(int current, int next, int x, int rowToSum)
+        {
+            if (x < 2)
+            {
+                Brick currentSwap = this.occurrence[current];
+                currentSwap.BrickLayout = this.horizontalView;
+                Brick nextSwap = this.occurrence[next];
+                nextSwap.BrickLayout = this.horizontalView;
+
+                // next goes current and swap.
+                this.result[nextSwap.Row, nextSwap.Col - 1] = nextSwap;
+                this.result[nextSwap.Row, nextSwap.Col] = nextSwap;
+
+                this.result[currentSwap.Row, nextSwap.Col + 1] = currentSwap;
+                this.result[currentSwap.Row, nextSwap.Col + 2] = currentSwap;
+
+                this.visited[x] = true;
+                this.visited[x + 1] = true;
+            }
+            else
+            {
+                Brick currentSwap = this.occurrence[current];
+                currentSwap.BrickLayout = this.horizontalView;
+                Brick nextSwap = this.occurrence[next];
+                nextSwap.BrickLayout = this.horizontalView;
+
+                // next goes current and swap.
+                this.result[nextSwap.Row, nextSwap.Col - 1] = nextSwap;
+                this.result[nextSwap.Row, nextSwap.Col] = nextSwap;
+
+                this.result[nextSwap.Row, nextSwap.Col2] = currentSwap;
+                this.result[nextSwap.Row, nextSwap.Col2 + 1] = currentSwap;
+
+                this.visited[x] = true;
+                this.visited[x + 1] = true;
+            }
+        }
+
+        private void HorizontalHorizontal(int current, int next, int x, int rowToSum)
         {
             // current = horizontal view.
             if (this.occurrence[next].Horizontal && this.occurrence[next].Vertical)
             {
-                // TO DO....
+                // Next = vertical view.
                 // Left right + Top bottom...
                 if (x < 2)
                 {
-                    var currentSwap = this.occurrence[current];
+                    Brick currentSwap = this.occurrence[current];
                     currentSwap.BrickLayout = this.horizontalView;
-                    var nextSwap = this.occurrence[next];
+                    Brick nextSwap = this.occurrence[next];
                     nextSwap.BrickLayout = this.verticalView;
 
                     // next goes current and swap.
@@ -129,9 +190,9 @@
                 }
                 else
                 {
-                    var currentSwap = this.occurrence[current];
+                    Brick currentSwap = this.occurrence[current];
                     currentSwap.BrickLayout = this.horizontalView;
-                    var nextSwap = this.occurrence[next];
+                    Brick nextSwap = this.occurrence[next];
                     nextSwap.BrickLayout = this.verticalView;
 
                     // next goes current and swap.
@@ -147,15 +208,15 @@
             }
             else
             {
-                // next = horizontal view.
+                // Next = horizontal view.
                 // move the seccond one to left side.
                 // Left right + left right...
                 // First 2 pair of bricks.
                 if (x < 2)
                 {
-                    var currentSwap = this.occurrence[current];
+                    Brick currentSwap = this.occurrence[current];
                     currentSwap.BrickLayout = this.horizontalView;
-                    var nextSwap = this.occurrence[next];
+                    Brick nextSwap = this.occurrence[next];
                     nextSwap.BrickLayout = this.verticalView;
 
                     // next goes current and swap.
@@ -170,17 +231,17 @@
                 }
                 else
                 {
-                    var currentSwap = this.occurrence[current];
+                    Brick currentSwap = this.occurrence[current];
                     currentSwap.BrickLayout = this.horizontalView;
-                    var nextSwap = this.occurrence[next];
+                    Brick nextSwap = this.occurrence[next];
                     nextSwap.BrickLayout = this.verticalView;
 
                     // next goes current and swap.
                     this.result[currentSwap.Row, currentSwap.Col + 1] = currentSwap;
                     this.result[currentSwap.Row, currentSwap.Col + 2] = currentSwap;
 
-                    this.result[nextSwap.Row - 1, nextSwap.Col2] = nextSwap;
-                    this.result[nextSwap.Row, nextSwap.Col2] = nextSwap;
+                    this.result[nextSwap.Row - 1, nextSwap.Col + 1] = nextSwap;
+                    this.result[nextSwap.Row, nextSwap.Col + 1] = nextSwap;
 
                     this.visited[x] = true;
                     this.visited[x + 1] = true;
