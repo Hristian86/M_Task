@@ -1,0 +1,8 @@
+C:\Users\Pencho\source\repos\InputReader\bin\Debug\netcoreapp3.1\InputReader.deps.json
+C:\Users\Pencho\source\repos\InputReader\bin\Debug\netcoreapp3.1\InputReader.dll
+C:\Users\Pencho\source\repos\InputReader\obj\Debug\netcoreapp3.1\InputReader.csprojAssemblyReference.cache
+C:\Users\Pencho\source\repos\InputReader\obj\Debug\netcoreapp3.1\InputReader.AssemblyInfoInputs.cache
+C:\Users\Pencho\source\repos\InputReader\obj\Debug\netcoreapp3.1\InputReader.AssemblyInfo.cs
+C:\Users\Pencho\source\repos\InputReader\bin\Debug\netcoreapp3.1\InputReader.pdb
+C:\Users\Pencho\source\repos\InputReader\obj\Debug\netcoreapp3.1\InputReader.dll
+C:\Users\Pencho\source\repos\InputReader\obj\Debug\netcoreapp3.1\InputReader.pdb

@@ -1,0 +1,8 @@
+C:\Users\Pencho\Desktop\M_Task\InputReader\bin\Debug\netcoreapp3.1\Assigment.InputReader.deps.json
+C:\Users\Pencho\Desktop\M_Task\InputReader\bin\Debug\netcoreapp3.1\Assigment.InputReader.dll
+C:\Users\Pencho\Desktop\M_Task\InputReader\bin\Debug\netcoreapp3.1\Assigment.InputReader.pdb
+C:\Users\Pencho\Desktop\M_Task\InputReader\obj\Debug\netcoreapp3.1\Assigment.InputReader.AssemblyInfoInputs.cache
+C:\Users\Pencho\Desktop\M_Task\InputReader\obj\Debug\netcoreapp3.1\Assigment.InputReader.AssemblyInfo.cs
+C:\Users\Pencho\Desktop\M_Task\InputReader\obj\Debug\netcoreapp3.1\Assigment.InputReader.dll
+C:\Users\Pencho\Desktop\M_Task\InputReader\obj\Debug\netcoreapp3.1\Assigment.InputReader.pdb
+C:\Users\Pencho\Desktop\M_Task\InputReader\obj\Debug\netcoreapp3.1\Assigment.InputReader.csprojAssemblyReference.cache

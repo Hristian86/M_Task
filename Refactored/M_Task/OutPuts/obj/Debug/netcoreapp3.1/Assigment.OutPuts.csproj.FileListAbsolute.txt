@@ -1,0 +1,7 @@
+C:\Users\Pencho\Desktop\M_Task\OutPuts\bin\Debug\netcoreapp3.1\Assigment.OutPuts.deps.json
+C:\Users\Pencho\Desktop\M_Task\OutPuts\bin\Debug\netcoreapp3.1\Assigment.OutPuts.dll
+C:\Users\Pencho\Desktop\M_Task\OutPuts\bin\Debug\netcoreapp3.1\Assigment.OutPuts.pdb
+C:\Users\Pencho\Desktop\M_Task\OutPuts\obj\Debug\netcoreapp3.1\Assigment.OutPuts.AssemblyInfoInputs.cache
+C:\Users\Pencho\Desktop\M_Task\OutPuts\obj\Debug\netcoreapp3.1\Assigment.OutPuts.AssemblyInfo.cs
+C:\Users\Pencho\Desktop\M_Task\OutPuts\obj\Debug\netcoreapp3.1\Assigment.OutPuts.dll
+C:\Users\Pencho\Desktop\M_Task\OutPuts\obj\Debug\netcoreapp3.1\Assigment.OutPuts.pdb
