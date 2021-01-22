@@ -24,6 +24,7 @@
 
         protected string verticalView { get; private set; } = "Vertical";
 
+        protected List<Brick> result2;
         protected int[,] result;
         protected Dictionary<int, List<Brick>> multiDimentionalPairHolder;
 
@@ -68,6 +69,9 @@
                 {
                     if (bricks[i].BrickLayout == this.horizontalView && bricks[i + 1].BrickLayout == this.verticalView)
                     {
+                        this.result2.Add(bricks[i + 1]);
+                        this.result2.Add(bricks[i]);
+
                         this.result[row, col] = bricks[i + 1].Number;
                         this.result[row + 1, col] = bricks[i + 1].Number;
 
@@ -79,6 +83,9 @@
                     }
                     else if (bricks[i].BrickLayout == this.horizontalView && bricks[i + 1].BrickLayout == this.horizontalView)
                     {
+                        this.result2.Add(bricks[i + 1]);
+                        this.result2.Add(bricks[i]);
+
                         this.result[row, col] = bricks[i + 1].Number;
                         this.result[row, col + 1] = bricks[i + 1].Number;
 
@@ -93,6 +100,8 @@
                 {
                     if (bricks[i].BrickLayout == this.horizontalView && bricks[i + 1].BrickLayout == this.verticalView)
                     {
+                        this.result2.Add(bricks[i]);
+                        this.result2.Add(bricks[i + 1]);
 
                         this.result[row - 1, col - 1] = bricks[i].Number;
                         this.result[row - 1, col] = bricks[i].Number;
@@ -106,6 +115,9 @@
                     }
                     else if (bricks[i].BrickLayout == this.horizontalView && bricks[i + 1].BrickLayout == this.horizontalView)
                     {
+                        this.result2.Add(bricks[i + 1]);
+                        this.result2.Add(bricks[i]);
+
                         this.result[row - 1, col - 2] = bricks[i + 1].Number;
                         this.result[row - 1, col - 1] = bricks[i + 1].Number;
 

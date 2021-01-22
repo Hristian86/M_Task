@@ -12,17 +12,40 @@
         {
             this.writer.Write(string.Empty);
 
-            for (int i = 0; i < this.result.GetLength(0); i++)
-            {
-                for (int j = 0; j < this.result.GetLength(1); j++)
-                {
-                    this.writer.WriteOneRow(this.result[i, j] + " ");
-                }
+            //for (int i = 0; i < this.result.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < this.result.GetLength(1); j++)
+            //    {
+            //        this.writer.WriteOneRow(this.result[i, j] + " ");
+            //    }
 
-                this.writer.Write(string.Empty);
-            }
+            //    this.writer.Write(string.Empty);
+            //}
 
             //this.DrawBricks();
+            this.DrawListOfBricks();
+        }
+
+        private void DrawListOfBricks()
+        {
+            var display = new string[5];
+
+            foreach (var brick in this.result2)
+            {
+                if (brick.BrickLayout == this.horizontalView)
+                {
+                    this.horizon(brick, display);
+                }
+                else if (brick.BrickLayout == this.verticalView)
+                {
+                    this.Vertical(brick, display);
+                }
+            }
+
+            foreach (var item in display)
+            {
+                this.writer.Write(item);
+            }
         }
 
         private void DrawBricks()
@@ -51,7 +74,6 @@
 
                 i += 1;
             }
-
 
             foreach (var item in dispaly)
             {

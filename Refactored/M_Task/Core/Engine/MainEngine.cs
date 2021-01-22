@@ -24,6 +24,7 @@
             this.matrix = new int[rows, cols];
             this.writer = new Writer();
             this.result = new int[rows, cols];
+            this.result2 = new List<Brick>();
         }
 
         /// <summary>
