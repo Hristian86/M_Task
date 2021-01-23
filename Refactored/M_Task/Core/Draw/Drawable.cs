@@ -12,15 +12,17 @@
         {
             this.writer.Write(string.Empty);
 
-            //for (int i = 0; i < this.result.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < this.result.GetLength(1); j++)
-            //    {
-            //        this.writer.WriteOneRow(this.result[i, j] + " ");
-            //    }
+            for (int i = 0; i < this.result.GetLength(0); i++)
+            {
+                for (int j = 0; j < this.result.GetLength(1); j++)
+                {
+                    this.writer.WriteOneRow(this.result[i, j] + " ");
+                }
 
-            //    this.writer.Write(string.Empty);
-            //}
+                this.writer.Write(string.Empty);
+            }
+
+            this.writer.Write(string.Empty);
 
             //this.DrawBricks();
             this.DrawListOfBricks();
