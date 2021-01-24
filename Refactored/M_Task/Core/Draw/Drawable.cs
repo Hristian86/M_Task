@@ -8,6 +8,9 @@
 
     public class Drawable : MainLogic, IDrawable
     {
+        /// <summary>
+        /// Display bricks as numbers.
+        /// </summary>
         public void DrawBrickWork()
         {
             this.writer.Write(string.Empty);
@@ -28,6 +31,9 @@
             this.DrawListOfBricks();
         }
 
+        /// <summary>
+        /// Draw bricks.
+        /// </summary>
         private void DrawListOfBricks()
         {
             var display = new string[5];

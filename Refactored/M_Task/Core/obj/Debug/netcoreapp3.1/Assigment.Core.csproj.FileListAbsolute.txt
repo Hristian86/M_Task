@@ -37,3 +37,16 @@ C:\Users\Pencho\Desktop\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment
 C:\Users\Pencho\Desktop\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.csproj.CopyComplete
 C:\Users\Pencho\Desktop\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.dll
 C:\Users\Pencho\Desktop\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.pdb
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.Core.deps.json
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.Core.dll
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.Core.pdb
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.InputReader.dll
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.OutPuts.dll
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.InputReader.pdb
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\bin\Debug\netcoreapp3.1\Assigment.OutPuts.pdb
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.csprojAssemblyReference.cache
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.AssemblyInfoInputs.cache
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.AssemblyInfo.cs
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.csproj.CopyComplete
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.dll
+G:\FilesForGithub\M_Task\Refactored\M_Task\Core\obj\Debug\netcoreapp3.1\Assigment.Core.pdb

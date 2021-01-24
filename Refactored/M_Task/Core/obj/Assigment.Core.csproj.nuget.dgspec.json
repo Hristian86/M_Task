@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\Core\\Assigment.Core.csproj": {}
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\Core\\Assigment.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\Core\\Assigment.Core.csproj": {
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\Core\\Assigment.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\Core\\Assigment.Core.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\Core\\Assigment.Core.csproj",
         "projectName": "Assigment.Core",
-        "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\Core\\Assigment.Core.csproj",
+        "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\Core\\Assigment.Core.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\Core\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
-                "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj"
+              "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
+                "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj"
               },
-              "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
-                "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj"
+              "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
+                "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj",
         "projectName": "Assigment.InputReader",
-        "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj",
+        "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\Assigment.InputReader.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\InputReader\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\InputReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "projectName": "Assigment.OutPuts",
-        "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

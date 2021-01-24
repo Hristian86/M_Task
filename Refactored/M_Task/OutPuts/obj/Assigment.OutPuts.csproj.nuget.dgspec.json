@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {}
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
+    "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectUniqueName": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "projectName": "Assigment.OutPuts",
-        "projectPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
+        "projectPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\Assigment.OutPuts.csproj",
         "packagesPath": "C:\\Users\\Pencho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pencho\\Desktop\\Refactored\\M_Task\\OutPuts\\obj\\",
+        "outputPath": "G:\\FilesForGithub\\M_Task\\Refactored\\M_Task\\OutPuts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

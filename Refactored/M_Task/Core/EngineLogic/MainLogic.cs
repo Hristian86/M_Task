@@ -8,6 +8,9 @@
     using Assigment.InputReader.Validate;
     using Assigment.OutPuts.OutPut;
 
+    /// <summary>
+    /// Holds data structures and some core logic.
+    /// </summary>
     public class MainLogic : Validations
     {
         public int ColumnPairs
@@ -42,6 +45,9 @@
             }
         }
 
+        /// <summary>
+        /// Checks each 2 * 4 cells in the pair holder.
+        /// </summary>
         protected void ArrangeResult()
         {
             int rows = this.result.GetLength(0) / 2;
@@ -61,6 +67,12 @@
             }
         }
 
+        /// <summary>
+        /// Assign new parametars/views to the cells of the matrix.
+        /// </summary>
+        /// <param name="bricks">Class object with individual parametars.</param>
+        /// <param name="row">Row from withc each layers starts.</param>
+        /// <param name="col">Column where the parametar view must be checked and changed.</param>
         private void Calculate(List<Brick> bricks, int row, int col)
         {
             for (int i = 0; i < bricks.Count - 1; i++)

@@ -37,6 +37,9 @@
             this.ArrangeResult();
         }
 
+        /// <summary>
+        /// Prints the solution.
+        /// </summary>
         public void Print()
         {
             this.DrawBrickWork();
