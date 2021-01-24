@@ -112,38 +112,44 @@
 
             List<Brick> uniquePair = new List<Brick>();
             int rows = 0;
-            int index = 0;
-            int count = 0;
+            int countPairs = 0;
             int countLayers = 0;
             for (int i = 0; i < layers; i++)
             {
                 for (int k = 0; k < pairs; k++)
                 {
-                    this.CellAssign(rows, uniquePair, index, count, ref countLayers, used);
+                    this.CellAssign(rows, uniquePair,  countPairs, ref countLayers, used);
 
-                    count += 4;
-                    index = 0;
+                    countPairs += 4;
                 }
 
                 rows += 2;
-                count = 0;
+                countPairs = 0;
             }
         }
 
-        private void CellAssign(int rows, List<Brick> list, int index, int count, ref int countLayers, bool[,] used)
+        /// <summary>
+        /// Fills each number and his view (horizontal or vertical) and adds them to the Dictionary childs.
+        /// </summary>
+        /// <param name="rows">Grow in rows.</param>
+        /// <param name="childsToBeAdded">Add the child for each number with assigned view.</param>
+        /// <param name="countPairs">Grow in pairs after the furst CellAssign it grows to check the rest of the column.</param>
+        /// <param name="countLayers">Each 2 rows make a layer.</param>
+        /// <param name="used">Bool array with visited cells.</param>
+        private void CellAssign(int rows, List<Brick> childsToBeAdded, int countPairs, ref int countLayers, bool[,] used)
         {
             for (int row = rows; row < 2 + rows; row++)
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    var col = j + count;
+                    var col = j + countPairs;
 
-                    if (list.Count == 4)
+                    if (childsToBeAdded.Count == 4)
                     {
-                        this.multiDimentionalPairHolder[countLayers] = list.ToList(); // To Do...
+                        this.multiDimentionalPairHolder[countLayers] = childsToBeAdded.ToList();
 
                         countLayers += 1;
-                        list.Clear();
+                        childsToBeAdded.Clear();
                     }
 
                     if (!used[row, col])
@@ -158,7 +164,7 @@
                                 used[row, col + 1] = true;
 
                                 // Logic...
-                                list.Add(new Brick()
+                                childsToBeAdded.Add(new Brick()
                                 {
                                     Number = this.matrix[row, col],
                                     BrickLayout = this.horizontalView,
@@ -176,7 +182,7 @@
                                 used[row + 1, col] = true;
 
                                 // Logic...
-                                list.Add(new Brick()
+                                childsToBeAdded.Add(new Brick()
                                 {
                                     Number = this.matrix[row, col],
                                     BrickLayout = this.verticalView,
